@@ -19,6 +19,25 @@ class Program
             Console.Write("Résultat du tir (touche/rate) : ");
             string resultat = Console.ReadLine();
 
+            if (resultat == "touche")
+            {
+                tirsReussis++;
+                fleches--;
+                Console.WriteLine("Bien joué ! Le cerf est touché");
+            }
+            else if (resultat == "rate")
+            {
+                fleches--;
+                Console.WriteLine("Raté ! Le cerf s'est échappé de justesse");
+            }
+            else
+            {
+                // si on a mal taper on fait une erreur et on redemande
+                Console.WriteLine("Saisie invalide, tape \"touche\" ou \"rate\"");
+                Console.WriteLine();
+
+            }
+
             
     }
 }
