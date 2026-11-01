@@ -38,6 +38,25 @@ class Program
 
             }
 
-            
+            if (tirsReussis == 3)
+            {
+                Console.WriteLine("Le cerf est abattu !");
+            }
+
+            Console.WriteLine();
+        }
+
+        Console.WriteLine(" BILAN DE LA CHASSE ");
+        Console.WriteLine("Tirs réussis : " + tirsReussis);
+        Console.WriteLine("Flèches restantes : " + fleches);
+
+        if (tirsReussis == 3)
+        {
+            Console.WriteLine("Résultat : chasse réussie !");
+        }
+        else
+        {
+            Console.WriteLine("Résultat : chasse ratée !");
+        }
     }
 }
