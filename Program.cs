@@ -9,7 +9,6 @@ class Program
         int fleches = 5;
         int tirsReussis = 0;
 
-        Console.WriteLine("Inspection des 4 wagons du train");
         Console.WriteLine("Vous commencez votre chasse");
         Console.WriteLine();
 
